@@ -1,0 +1,32 @@
+iframe {
+  height: 900px;
+  width: 70%;
+  resize: both;
+  overflow: auto;
+}
+
+#mainnavbar{
+      background-color: #edfc1e;
+      color: black;
+   }
+
+
+#brand{
+  color:#000000 ;
+  font-size:100%;
+  font-weight: bold;
+  display: block;
+}
+#navbardrop{
+  color:#000000 ;
+}
+#navbardrop:hover{
+  background-color:#000000;
+  color:#edfc1e;
+}
+#loadtbl{
+  float: left;
+}
+#unloadtbl{
+  float: right;
+}

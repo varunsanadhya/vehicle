@@ -1,0 +1,15 @@
+{% extends 'vehicle_movement/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+  <h1>This is Checkin Form</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{checkin_form.as_p}}
+    <input type="Submit" name="Submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+{% endblock %}

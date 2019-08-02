@@ -1,0 +1,66 @@
+{% extends 'vehicle_movement/base.html'%}
+{% block body_block %}
+<h1> This is list view </h1>
+<div class="container" id = loadtbl>
+  <div class = "row">
+    <div class="col-md-6">
+
+<table class = " table table-bordered table-hover" >
+
+            <th>Vehicle Number</th>
+            <th>Driver's Name</th>
+            <th>BusinessUnit</th>
+            <th>Check in Time</th>
+            <th>Action</th>
+
+
+          {% for vehicles in vehicle_list_load %}
+          <tr>
+            <td>{{vehicles.vehicle_num}}</td>
+            <td>{{vehicles.Driver_name}}</td>
+            <td>{{vehicles.BusinessUnit}}</td>
+            <td>{{vehicles.CheckinTime}}</td>
+            <td>{{vehicles.Type}}</td>
+
+            <td>
+            </td>
+
+          </tr>
+          {% endfor %}
+    </table>
+</div>
+</div>
+</div>
+<div class="container" id = unloadtbl>
+  <div class = "row">
+
+    <div class="col-md-6">
+
+<table class = " table table-bordered table-hover">
+
+            <th>Vehicle Number</th>
+            <th>Driver's Name</th>
+            <th>BusinessUnit</th>
+            <th>Check in Time</th>
+            <th>Action</th>
+
+
+          {% for vehicles in vehicle_list_unload %}
+
+          <tr>
+            <td>{{vehicles.vehicle_num}}</td>
+            <td>{{vehicles.Driver_name}}</td>
+            <td>{{vehicles.BusinessUnit}}</td>
+            <td>{{vehicles.CheckinTime}}</td>
+            <td>{{vehicles.Type}}</td>
+
+            <td>
+            </td>
+
+          </tr>
+          {% endfor %}
+    </table>
+</div>
+</div>
+</div>
+{% endblock %}
